@@ -29,7 +29,7 @@ ssh_key_pairs = [
 ]
 
 # Iglu Server DNS output from the Iglu Server stack
-iglu_server_dns_name = "http://<CHANGE-TO-MY-IGLU-IP>"
+iglu_server_dns_name = "http://35.244.131.103"
 # Used for API actions on the Iglu Server
 # Change this to the same UUID from when you created the Iglu Server
 iglu_super_api_key = "798cc48d-52f3-48fe-a5ce-5a7a280347bf"
