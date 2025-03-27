@@ -1,26 +1,24 @@
 # Please accept the terms of the Snowplow Limited Use License Agreement to proceed. (https://docs.snowplow.io/limited-use-license-1.0/)
-accept_limited_use_license = false
+accept_limited_use_license = true
 
 # Will be prefixed to all resource names
 # Use this to easily identify the resources created and provide entropy for subsequent environments
 prefix = "sp"
 
 # The project to deploy the infrastructure into
-project_id = "PROJECT_ID_TO_DEPLOY_INTO"
+project_id = "snowplow-test-447809"
 
 # Where to deploy the infrastructure
-region = "REGION_TO_DEPLOY_INTO"
+region = "europe-west1"
 
-# --- Default Network
 # Update to the network you would like to deploy into
 #
 # Note: If you opt to use your own network then you will need to define a subnetwork to deploy into as well
 network    = "default"
 subnetwork = ""
 
-# --- SSH
 # Update this to your IP Address
-ssh_ip_allowlist = ["999.999.999.999/32"]
+ssh_ip_allowlist = ["0.0.0.0/0"]
 # Generate a new SSH key locally with `ssh-keygen`
 # ssh-keygen -t rsa -b 4096 
 ssh_key_pairs = [
@@ -34,11 +32,11 @@ ssh_key_pairs = [
 iglu_db_name     = "iglu"
 iglu_db_username = "iglu"
 # Change and keep this secret!
-iglu_db_password = "<PASSWORD>"
+iglu_db_password = "fiksutesti"
 
 # Used for API actions on the Iglu Server
 # Change this to a new UUID and keep it secret!
-iglu_super_api_key = "00000000-0000-0000-0000-000000000000"
+iglu_super_api_key = "798cc48d-52f3-48fe-a5ce-5a7a280347bf"
 
 # NOTE: To push schemas to your Iglu Server, you can use igluctl
 # igluctl: https://docs.snowplowanalytics.com/docs/pipeline-components-and-applications/iglu/igluctl

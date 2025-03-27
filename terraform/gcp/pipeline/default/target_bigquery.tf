@@ -21,7 +21,7 @@ resource "google_bigquery_dataset" "bigquery_db" {
 resource "google_storage_bucket" "bq_loader_dead_letter_bucket" {
   count = var.bigquery_db_enabled && var.bigquery_loader_dead_letter_bucket_deploy ? 1 : 0
 
-  name          = var.bigquery_loader_dead_letter_bucket_name
+  name          = "fiksu-${var.bigquery_loader_dead_letter_bucket_name}"
   location      = var.region
   force_destroy = true
 
